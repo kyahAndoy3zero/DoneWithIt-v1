@@ -2,6 +2,7 @@ import React from 'react';
 import { FlatList} from 'react-native'
 import ListItem from '../components/ListItem';
 import ListSeparator from '../components/ListSeparator';
+import ListItemDeleteAction from '../components/ListItemDeleteAction';
 
 const messages = [
    {
@@ -28,12 +29,13 @@ function MessagesScreen(props) {
             data={messages}
             keyExtractor={message => message.id.toString()}
             renderItem={({item}) => 
-         <ListItem 
-            title={item.title}
-            subTitle={item.description}
-            image={item.image}
-            onPress={() => printData("Message", item)}
-         />}
+            <ListItem 
+                title={item.title}
+                subTitle={item.description}
+                image={item.image}
+                onPress={() => printData("Message", item)}
+                renderRightActions={() => <ListItemDeleteAction/>}
+            />}
          ItemSeparatorComponent={ListSeparator}
          />
     );
