@@ -7,11 +7,16 @@ import ImageView from './app/screens/ImageView';
 import Card from './app/components/Card';
 import ListingDetailsScreen from './app/screens/ListingDetailsScreen';
 import MessagesScreen from './app/screens/MessagesScreen';
+import MyAccountScreen from './app/screens/MyAccountScreen';
+import Icon from './app/components/Icon';
+import ListItem from './app/components/ListItem';
+
+
 
 export default function App() {
   return (
     <SafeAreaView>
-      <MessagesScreen/>
+      <MyAccountScreen/>
     </SafeAreaView>
     
   );
