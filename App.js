@@ -10,13 +10,13 @@ import MessagesScreen from './app/screens/MessagesScreen';
 import MyAccountScreen from './app/screens/MyAccountScreen';
 import Icon from './app/components/Icon';
 import ListItem from './app/components/ListItem';
-
+import ListingScreen from './app/screens/ListingScreen';
 
 
 export default function App() {
   return (
     <SafeAreaView>
-      <MyAccountScreen/>
+      <ImageView/>
     </SafeAreaView>
     
   );

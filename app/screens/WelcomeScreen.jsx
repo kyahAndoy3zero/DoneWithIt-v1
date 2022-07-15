@@ -15,7 +15,6 @@ function WelcomeScreen(props) {
                 <AppButton title="Login"/>
                 <AppButton title="Register" color='secondary'/>
             </View>
-            
         </ImageBackground>
     );
 }

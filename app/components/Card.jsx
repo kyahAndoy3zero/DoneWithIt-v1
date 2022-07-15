@@ -33,7 +33,6 @@ const styles = StyleSheet.create({
     cardContainer: {
         backgroundColor: "#f8f4f4",
         padding: 20,
-        paddingTop: 100,
     },
     
     detailsContainer: {

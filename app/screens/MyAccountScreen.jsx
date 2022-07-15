@@ -35,9 +35,9 @@ const menuItems = [
 
 function MyAccountScreen(props) {
     return (
-        <View style={styles.backdrop}>
+       
         <View style={styles.container}>
-            <ListItem title="Zandro Gene Ortecio" subTitle={'kyahandoy@gmail.com'} image={require('../assets/mosh.jpg')}/>
+            <ListItem title="Zandro Gene Ortecio" subTitle={'kyahandoy@gmail.com'} image={require('../assets/kyah.jpg')}/>
             <View style={styles.container}>
             <FlatList
                 data={menuItems}
@@ -52,13 +52,12 @@ function MyAccountScreen(props) {
             </View>
             <ListItem title={'Log out'} IconComponent={<Icon name={'log-out-outline'} backgroundColor={colors.logout}/>}/>
         </View>
-        </View>
+      
     );
 }
 
 
 const styles = StyleSheet.create({
-
     container: {
         marginVertical: 20,
     },
