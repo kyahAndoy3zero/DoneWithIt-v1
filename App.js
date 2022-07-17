@@ -11,14 +11,13 @@ import MyAccountScreen from './app/screens/MyAccountScreen';
 import Icon from './app/components/Icon';
 import ListItem from './app/components/ListItem';
 import ListingScreen from './app/screens/ListingScreen';
-
+import RegisterScreen from './app/screens/RegisterScreen';
 
 export default function App() {
   return (
     <SafeAreaView>
-      <ImageView/>
+      <RegisterScreen/>
     </SafeAreaView>
-    
   );
 }
 
