@@ -1,6 +1,8 @@
+import React, {useState} from 'react';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Switch, Text, View } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
+
 
 import WelcomeScreen from './app/screens/WelcomeScreen'
 import ImageView from './app/screens/ImageView';
@@ -13,10 +15,15 @@ import ListItem from './app/components/ListItem';
 import ListingScreen from './app/screens/ListingScreen';
 import RegisterScreen from './app/screens/RegisterScreen';
 
+
 export default function App() {
+
+  const [isNew, setIsNew] = useState(false)
+
+
   return (
     <SafeAreaView>
-      <RegisterScreen/>
+      <Switch value={isNew} onValueChange={newValue => setIsNew(newValue)}/>
     </SafeAreaView>
   );
 }

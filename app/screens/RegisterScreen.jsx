@@ -2,6 +2,7 @@ import React from 'react';
 
 import { FlatList, View, StyleSheet } from 'react-native'
 
+import AppButton from '../components/AppButton';
 import AppInput from '../components/AppInput';
 import colors from '../config/colors';
 import Icon from '../components/Icon';
@@ -41,6 +42,7 @@ function RegisterScreen(props) {
               <AppInput placeholder={item.placeholder} inputType={item.placeholder === "Password" ? true : false} IconComponent={<Icon name={item.icon.name} size={30} backgroundColor={item.icon.backgroundColor}/>}/>
             }
               />
+              <AppButton title={"Register"} />
             </View>
     );
 }

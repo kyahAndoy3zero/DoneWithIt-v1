@@ -26,6 +26,7 @@ const styles = StyleSheet.create({
 
     textInput: {
         fontSize: 18,
+        width: "100%"
     }
 })
 
